@@ -9,6 +9,7 @@ body{
   font-size: 15px;
   padding: 50px 200px;
   min-height: 100vh;
+  color: white;
 }
 
 p{
@@ -16,7 +17,12 @@ p{
 }
 
 section{
-  margin: 100px;
+  margin: 4%;
+}
+
+.app{
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
 }
 
 
@@ -60,12 +66,25 @@ section{
 @media (max-width: 1700px){
   body{
     padding: 60px 20px;
-    min-height: 100vh;
-  }
-  
-  section{
-    margin: 60px;
+    min-height: 400px;
   }
 
+}
+
+@media (max-width: 768px) {
+  .sec-one, .sec-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sec-one .left {
+      margin-bottom: 20px;
+      margin-right: 0;
+      text-align: center;
+  }
+  .rating{
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 
 }

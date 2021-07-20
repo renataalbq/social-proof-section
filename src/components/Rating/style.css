@@ -27,6 +27,10 @@ img{
 }
 
 @media (max-width: 768px){
+  .rate {
+    display: flex;
+    flex-direction: column;
+  }
   .rate:nth-child(1), .rate:nth-child(2), .rate:nth-child(3){
     margin-left: 0;
     align-self: stretch;
